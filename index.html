@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Now| Premium Bakery product</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Shop Now</a>
+      <nav class="main-nav">
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <button type="button" id="btn-user-panel" class="button button-secondary">User Panel</button>
+        <button type="button" id="btn-admin-panel" class="button button-secondary">Admin Panel</button>
+      </nav>
+      <button class="button button-primary" id="view-cart-button">Cart <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- User View -->
+    <section id="user-view">
+      <section id="categories" class="section-heading">
+        <div class="section-title">
+          <h2>Shop by category</h2>
+        </div>
+        <div class="category-list" id="category-list"></div>
+      </section>
+
+      <section id="products" class="section-heading">
+        <div class="section-title">
+          <h2>Top trending products</h2>
+          <p>Handpicked items updated from the admin dashboard.</p>
+        </div>
+        <div id="product-list" class="product-grid"></div>
+      </section>
+    </section>
+
+    <!-- Admin View -->
+    <section id="admin-view" class="hidden">
+      <section class="card admin-card" id="login-section">
+        <h2>Secure Admin Access</h2>
+        <form id="login-form">
+          <label>Admin Password</label>
+          <input type="password" id="admin-password" required placeholder="Enter password" />
+          <button type="submit" class="button button-primary">Login</button>
+        </form>
+        <p class="note">Demo password: <strong>admin123</strong></p>
+      </section>
+
+      <section class="card admin-card hidden" id="manage-section">
+        <div class="admin-grid">
+          <div>
+            <h2>Add a New Product</h2>
+            <form id="product-form" enctype="multipart/form-data">
+              <label>Product Name</label>
+              <input type="text" name="name" required placeholder="Product name" />
+
+              <label>Price</label>
+              <input type="number" name="price" required step="0.01" min="0" placeholder="19.99" />
+
+              <label>Category</label>
+              <input type="text" name="category" placeholder="Groceries, Home, Electronics" />
+
+              <label>Description</label>
+              <textarea name="description" rows="4" placeholder="Product description"></textarea>
+
+              <label>Product Image</label>
+              <input type="file" name="image" accept="image/*" capture="environment" />
+
+              <button type="submit" class="button button-primary">Add Product</button>
+            </form>
+          </div>
+          <div class="admin-summary">
+            <h2>Dashboard Summary</h2>
+            <p id="product-count">Products loaded: 0</p>
+            <p>Use the product list below to remove or update your catalog instantly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card admin-card hidden" id="products-section">
+        <h2>Product Catalog</h2>
+        <div id="admin-product-list" class="product-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <aside class="cart-panel hidden" id="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="button button-secondary" id="close-cart">Close</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cart-total">$0.00</span></div>
+      <button class="button button-primary" id="checkout-button">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="cart-backdrop hidden" id="cart-backdrop"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>SHOP NOW</h4>
+        <p>Thank you for shopping with us.</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Email: skraja722138@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

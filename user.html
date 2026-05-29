@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MartNow | Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">MartNow</a>
+      <nav class="main-nav">
+        <a href="#offers">Offers</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-primary" id="view-cart-button">Cart <span id="cart-count">0</span></button>
+        <button class="button button-secondary" id="logout-button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="offers">
+      <div class="hero-copy">
+        <span class="eyebrow">Your One-Stop Shop</span>
+        <h1>Fresh Finds, Every Day</h1>
+        <p>Explore top-quality products and enjoy a seamless shopping experience.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="shop-now">Start Shopping</button>
+          <button class="button button-secondary" id="view-products">Discover More</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/images/new-animated-banner.gif" alt="Exciting Products" class="hero-image" />
+      </div>
+    </section>
+
+    <style>
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(135deg, #e0f7fa, #80deea);
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      .hero-copy h1 {
+        font-size: 2.5rem;
+        color: #00796b;
+        margin-bottom: 15px;
+      }
+
+      .hero-copy p {
+        font-size: 1rem;
+        color: #004d40;
+        margin-bottom: 15px;
+      }
+
+      .hero-image {
+        max-width: 350px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+
+    <section class="features">
+      <div class="feature-card">
+        <strong>Express delivery</strong>
+        <p>Ready to ship within hours across your city.</p>
+      </div>
+      <div class="feature-card">
+        <strong>Trusted quality</strong>
+        <p>Verified products for every home and kitchen.</p>
+      </div>
+      <div class="feature-card">
+        <strong>Easy returns</strong>
+        <p>Fast refund and support for all orders.</p>
+      </div>
+    </section>
+
+    <section id="categories" class="section-heading">
+      <div class="section-title">
+        <h2>Shop by category</h2>
+      </div>
+      <div class="category-list" id="category-list"></div>
+    </section>
+
+    <section id="products" class="section-heading">
+      <div class="section-title">
+        <h2>Top trending products</h2>
+        <p>Handpicked items updated from the admin dashboard.</p>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+  </main>
+
+  <aside class="cart-panel hidden" id="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="button button-secondary" id="close-cart">Close</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cart-total">₹0.00</span></div>
+      <button class="button button-primary" id="checkout-button">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="cart-backdrop hidden" id="cart-backdrop"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>MartNow</h4>
+        <p>Professional online store experience, managed through an admin dashboard.</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Email: support@martnow.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

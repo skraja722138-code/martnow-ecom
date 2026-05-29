@@ -1,0 +1,66 @@
+[
+  {
+    "id": "p-1780066454560-jywkj4",
+    "name": "chotu",
+    "category": "General",
+    "price": 55,
+    "description": "",
+    "imageUrl": "/uploads/1780066454558-de7m1d7vc3b.jpg"
+  },
+  {
+    "id": "p-1780065625163-mr3s3l",
+    "name": "sarah",
+    "category": "oreee",
+    "price": 44.98,
+    "description": "",
+    "imageUrl": "/uploads/1780065625161-57pnvs5es97.jpg"
+  },
+  {
+    "id": "p-1780065289429-fvzwdw",
+    "name": "raja",
+    "category": "General",
+    "price": 90,
+    "description": "",
+    "imageUrl": "/uploads/1780065289423-5rnqxa37rrx.jpg"
+  },
+  {
+    "id": "p-1780034683630-yn98s1",
+    "name": "raja",
+    "category": "General",
+    "price": 90,
+    "description": "",
+    "imageUrl": "/uploads/1780034683625-vlgo3hu0kgs.jpg"
+  },
+  {
+    "id": "p-1779677275891-ep5llg",
+    "name": "chips",
+    "category": "snacks",
+    "price": 30,
+    "description": "",
+    "imageUrl": "/uploads/1779677275888-njtly5vvvw.webp"
+  },
+  {
+    "id": "p-1779677236963-d7yd8w",
+    "name": "bingo",
+    "category": "snacks",
+    "price": 25,
+    "description": "",
+    "imageUrl": "/uploads/1779677236961-nsbqr2ncus.jpg"
+  },
+  {
+    "id": "p-1779677212113-bchgdd",
+    "name": "kurkure",
+    "category": "snakcs",
+    "price": 20,
+    "description": "",
+    "imageUrl": "/uploads/1779677212109-tu4lu40t4uo.jpg"
+  },
+  {
+    "id": "p-1779677160604-wijumm",
+    "name": "lays",
+    "category": "snacks",
+    "price": 10.56,
+    "description": "potato snacks make with pure vegetable oil",
+    "imageUrl": "/uploads/1779677160599-xvhpzzabn1.jpg"
+  }
+]

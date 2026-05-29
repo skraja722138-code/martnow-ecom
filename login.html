@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MartNow | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-intro">
+      <h1>MartNow</h1>
+      <p>Choose your access type to continue. Admins can manage products. Users can shop and add items to cart.</p>
+      <div class="login-options">
+        <div class="login-card">
+          <h2>User Login</h2>
+          <form id="user-login-form">
+            <label>Email</label>
+            <input type="email" id="user-email" required placeholder="you@example.com" />
+            <label>Password</label>
+            <input type="password" id="user-password" required placeholder="user123" />
+            <button class="button button-primary" type="submit">Login as User</button>
+          </form>
+        </div>
+        <div class="login-card login-card-admin">
+          <h2>Admin Login</h2>
+          <form id="admin-login-form">
+            <label>Password</label>
+            <input type="password" id="admin-password" required placeholder="admin123" />
+            <button class="button button-secondary" type="submit">Login as Admin</button>
+          </form>
+          <p class="note">Demo passwords: user <strong>user123</strong>, admin <strong>admin123</strong>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
